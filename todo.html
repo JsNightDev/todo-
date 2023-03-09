@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/todostyle.css">
+
+</head>
+
+<body>
+    <div class="flex flex-col width-full h-screen bg-gradient-to-t from-orange-50">
+
+
+        <!-- Header -->
+        <div class="flex items-center justify-center bg-lime-50 shadow-lg 
+                        shadow-black-500/50 select-none cursor-pointer">
+
+            <div class="border bg-white drop-shadow-2xl shadow-lg 
+                            shadow-black-500/50 rounded-xl p-[8px]">
+                <h1 class="text-5xl font-bold text-black header">
+                    to do
+                </h1>
+            </div>
+
+        </div>
+
+        <!-- user Create To Do List's -->
+        <div id="createsToDo">
+
+        </div>
+
+        <!-- user Create To Do List's -->
+        <div id="addToDo" class=" bg-lime-50 shadow-lg shadow-black-500/50 w-full fixed bottom-0">
+
+            <div class="border bg-white drop-shadow-2xl shadow-lg 
+             flex items-center justify-center shadow-black-500/50 rounded-xl m-[30px] px-[130px] py-[10px] gap-[15px]">
+
+                <input id="inputToDo" type="text" placeholder="Add a task"
+                    class="w-full outline-none focus:border-b-[1px]" required minlength="4" maxlength="100" size="50">
+
+                <div onclick="addButton()" class="cursor-pointer">
+                    <img src="./assets/add buuton.png" alt="add Button">
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

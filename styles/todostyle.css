@@ -1,0 +1,60 @@
+*::-webkit-scrollbar {
+  display: none;
+}
+.header {
+  font-family: "Comfortaa", cursive;
+}
+#createsToDo {
+  margin-left: 145px;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.todo_s {
+  background: none;
+  width: 100%;
+  outline: none;
+  font-weight: 900;
+  font-size: 25px;
+  font-family: fangsong;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.checkbox {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+.parentEachTodo {
+  width: 90%;
+  border-radius: 25px;
+  overflow-wrap: break-word;
+  height: 100px;
+  margin-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.parentEachTodo:hover .deltbutton {
+  display: inline;
+}
+.parentEachTodo:hover {
+  cursor: pointer;
+  background-color: rgb(223, 239, 253);
+  border-radius: 15px;
+}
+.line_Throgh {
+  text-decoration: line-through;
+}
+.deltbutton {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  display: none;
+}
